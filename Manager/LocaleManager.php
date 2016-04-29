@@ -10,9 +10,9 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\LocaleBundle\Manager\Admin;
+namespace WellCommerce\Bundle\LocaleBundle\Manager;
 
-use WellCommerce\Bundle\CoreBundle\Manager\Admin\AbstractAdminManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 use WellCommerce\Bundle\CurrencyBundle\Entity\CurrencyInterface;
 use WellCommerce\Bundle\LocaleBundle\Copier\LocaleCopierInterface;
 use WellCommerce\Bundle\LocaleBundle\Entity\LocaleInterface;
@@ -22,7 +22,7 @@ use WellCommerce\Bundle\LocaleBundle\Entity\LocaleInterface;
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class LocaleManager extends AbstractAdminManager
+class LocaleManager extends AbstractManager
 {
     public function createLocale(string $localeCode, string $targetLocaleCurrency) : LocaleInterface
     {
